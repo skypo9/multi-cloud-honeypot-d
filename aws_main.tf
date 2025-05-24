@@ -16,7 +16,7 @@ provider "aws" {
   resource "aws_instance" "cowrie_aws" {
     ami           = data.aws_ami.ubuntu.id
     instance_type = "t2.micro"
-    key_name      = "csec5615"  # Replace with your actual key name
+    key_name      = "csecxxxx"  # Replace with your actual key name
   
     user_data = file("cowrie-setup.sh")
   
