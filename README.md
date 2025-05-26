@@ -18,9 +18,9 @@ This project deploys Cowrie honeypot systems across AWS, Azure, and GCP, all int
 
 - Add metadata_startup_script to auto-install Cowrie.
 
-- Run:
-      terraform init
-      terraform apply
+
+        terraform init
+        terraform apply
 
 #Setup AWS instance using the terraform tool:
 - Configure AWS credentials (aws configure).
@@ -30,7 +30,7 @@ This project deploys Cowrie honeypot systems across AWS, Azure, and GCP, all int
 - Define instance details (AMI ID, instance type, key pair, security group).
 
 - Add user_data to install Cowrie on boot.
-- Run:
+
       terraform init
       terraform apply
 
@@ -42,7 +42,7 @@ This project deploys Cowrie honeypot systems across AWS, Azure, and GCP, all int
 - Define VM parameters (resource group, location, image, size).
 
 - Include a custom_data script to install Cowrie.
-- Run:
+
       terraform init
       terraform apply
 
@@ -62,6 +62,6 @@ This project deploys Cowrie honeypot systems across AWS, Azure, and GCP, all int
     - Filebeat (optional for log forwarding)
 
 - Expose necessary ports (5601, 9200, 5044) in the firewall rules.
-- Run:
+
       terraform init
       terraform apply
